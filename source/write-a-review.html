@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" alt="Sedona">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="media.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="write-a-review.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="page-header__intro">
+        <h1 class="intro-title">
+          Sedona
+        </h1>
+      </section>
+    </header>
+    <main class="page-main">
+      <h2 class="page-main__header">Оставьте свой отзыв</h2>
+      <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+      <form class="review-form">
+        <fieldset class="form-section form-section--name">
+          <legend class="fieldset-header">Представьтесь:</legend>
+          <p><label>Имя<sup>*</sup>: <input type="text" name="name" placeholder="Петр"></label></p>
+          <p><label>Фамилия<sup>*</sup>: <input type="text" name="last-name" placeholder="Иванов"></label></p>
+          <p><label>Отчество: <input type="text" name="middle-name" placeholder="Александрович"></label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--contact-info">
+          <legend class="fieldset-header">Контактная информация:</legend>
+          <p><label>Контактный телефон<sup>*</sup>: <input type="tel" name="phone" placeholder="Введите телефон"></label></p>
+          <p><label>Электронная почта<sup>*</sup>: <input type="email" name="email" placeholder="Введите e-mail"></label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--impression">
+          <legend class="fieldset-header">Ваше общее впечатление:</legend>
+          <p><label><input type="radio" name="impression" value="positive">Скорее положительное</label></p>
+          <p><label><input type="radio" name="impression" value="negative">Скорее отрицательное</label></p>
+          <p><label><input type="radio" name="impression" value="undetermined">Затрудняюсь ответить</label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--visited-places">
+          <legend class="fieldset-header">Посещенные достопримечательности:</legend>
+          <p><label><input type="checkbox" name="devils-bridge">Мост Дьявола</label></p>
+          <p><label><input type="checkbox" name="bell-mountain">Гора-Колокол</label></p>
+          <p><label><input type="checkbox" name="slide-park">Слайд-парк</label></p>
+          <p><label><input type="checkbox" name="red-rocks">Красные скалы</label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--review">
+          <legend class="fieldset-header">Опишите свои эмоции:</legend>
+          <p><textarea placeholder="Опишите подробно все свои восторги"></textarea></p>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag">
+          <p class="hashtag">#visitsedona</p>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/sedonaaz">
+                <span class="visually-hidden">Аккаунт города Седона в Твиттере</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/watch?v=_qHjLngt7OI">
+                <span class="visually-hidden">Видеоролик о Седоне</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/VisitSedona/">
+                <span class="visually-hidden">Аккаунт города Седона в Фейсбуке</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <p class="copyright__text">Разработано <span class="visually-hidden">в HTML Academy</span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
