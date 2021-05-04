@@ -18,6 +18,14 @@
 
 .media__list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .media__item {
@@ -25,6 +33,15 @@
   padding-right: 20px;
   margin-bottom: 15px;
   border-bottom: 1px solid #E5E5E5;
+}
+
+.media__item--first {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+  @media (min-width: $desktop-width) {
+    grid-column: span 3;
+  }
 }
 
 .media__title {
@@ -43,4 +60,7 @@
   font-weight: 700;
   margin-top: 8px;
   line-height: 24px;
+}
+
+.media__photo {
 }
