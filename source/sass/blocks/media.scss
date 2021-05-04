@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.media__description {
+  position: relative;
+}
+
 .media__description-text {
   line-height: 24px;
   text-align: center;
@@ -60,6 +64,18 @@
   font-weight: 700;
   margin-top: 8px;
   line-height: 24px;
+  margin-left: 15px;
+  &::before {
+    content: "";
+    width: 39px;
+    height: 37px;
+    position: absolute;
+    left: 5px;
+    top: 58px;
+    background-image: url(../../img/like-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .media__photo {
