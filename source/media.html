@@ -1,144 +1,153 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Sedona</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" alt="Sedona">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="media.html">
-                Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="write-a-review.html">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="page-header__intro">
-        <h1 class="intro-title">
-          Sedona
-        </h1>
-      </section>
-    </header>
-    <main class="page-main">
-      <h2>Фото и видео</h2>
-      <section class="media">
-        <p class="section-description">Не можете решиться на путешествие из-за курса?
-          Фотографии помогут вам забыть о политике и экономике.</p>
-        <list class="media__list">
-          <li class="media__item">
-            <img src="img/photo-1-mobile.jpg">
-            <div class="media__description">
-              <p class="media__title">Неродные просторы</p>
-              <p class="media__author">Автор фото: Борис</p>
-              <p class="media__liked">
-                <svg class="login-icon" width="23" height="21">
-                  <use xlink:href="img/like-icon.svg"></use>
-                </svg>
-                1350
-              </p>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sedona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg" alt="Sedona">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
           </li>
-          <li class="media__item">
-            <img src="img/photo-2-mobile.jpg">
-            <div class="media__description">
-              <p class="media__title">Местная растительность</p>
-              <p class="media__author">Автор фото: Сергей</p>
-              <p class="media__liked">
-                <svg class="login-icon" width="23" height="21">
-                  <use xlink:href="img/like-icon.svg"></use>
-                </svg>
-                143
-              </p>
-            </div>
+          <li class="site-list__item">
+            <a href="media.html">
+              Фото и видео
+            </a>
           </li>
-          <li class="media__item">
-            <img src="img/photo-3-mobile.jpg">
-            <div class="media__description">
-              <p class="media__title">Дорога на север</p>
-              <p class="media__author">Автор фото: Петр</p>
-              <p class="media__liked">
-                <svg class="login-icon" width="23" height="21">
-                  <use xlink:href="img/like-icon.svg"></use>
-                </svg>
-                96
-              </p>
-            </div>
+          <li class="site-list__item">
+            <a href="write-a-review.html">
+              Форма отзыва
+            </a>
           </li>
-          <li class="media__item">
-            <img src="img/photo-4-mobile.jpg">
-            <div class="media__description">
-              <p class="media__title">Мост Дьявола</p>
-              <p class="media__author">Автор фото: Антон</p>
-              <p class="media__liked">
-                <svg class="login-icon" width="23" height="21">
-                  <use xlink:href="img/like-icon.svg"></use>
-                </svg>
-                254
-              </p>
-            </div>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">
+              HTML Academy
+            </a>
           </li>
-        </list>
-      </section>
-      <section class="video-presentation">
-        <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
-        <p class="video-presentation__header">Все еще сомневаетесь?</p>
-        <p class="section-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img src="img/video-mobile.jpg">
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__hashtag">
-          <p class="hashtag">#visitsedona</p>
-        </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/sedonaaz">
-                <span class="visually-hidden">Аккаунт города Седона в Твиттере</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/watch?v=_qHjLngt7OI">
-                <span class="visually-hidden">Видеоролик о Седоне</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/VisitSedona/">
-                <span class="visually-hidden">Аккаунт города Седона в Фейсбуке</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <p class="copyright__text">Разработано <span class="visually-hidden">в HTML Academy</span></p>
-        </div>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </nav>
+    <section class="intro">
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <img src="img/SEDONA.svg" alt="Логотип Седоны" width="229" height="39">
+    </section>
+  </header>
+  <main class="page-main">
+    <section class="media">
+      <div class="media__text-wrapper">
+        <h2 class="media__subtitle">Фото и видео</h2>
+        <p class="media__description-text">Не можете решиться на путешествие из-за курса?
+          Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+      <list class="media__list">
+        <li class="media__item">
+          <img src="img/photo-1-mobile.jpg">
+          <div class="media__description">
+            <p class="media__title">Неродные просторы</p>
+            <p class="media__author">Автор фото: Борис</p>
+            <p class="media__liked">
+              <svg class="login-icon" width="23" height="21">
+                <use xlink:href="img/like-icon.svg"></use>
+              </svg>
+              1350
+            </p>
+          </div>
+        </li>
+        <li class="media__item">
+          <img src="img/photo-2-mobile.jpg">
+          <div class="media__description">
+            <p class="media__title">Местная растительность</p>
+            <p class="media__author">Автор фото: Сергей</p>
+            <p class="media__liked">
+              <svg class="login-icon" width="23" height="21">
+                <use xlink:href="img/like-icon.svg"></use>
+              </svg>
+              143
+            </p>
+          </div>
+        </li>
+        <li class="media__item">
+          <img src="img/photo-3-mobile.jpg">
+          <div class="media__description">
+            <p class="media__title">Дорога на север</p>
+            <p class="media__author">Автор фото: Петр</p>
+            <p class="media__liked">
+              <svg class="login-icon" width="23" height="21">
+                <use xlink:href="img/like-icon.svg"></use>
+              </svg>
+              96
+            </p>
+          </div>
+        </li>
+        <li class="media__item">
+          <img src="img/photo-4-mobile.jpg">
+          <div class="media__description">
+            <p class="media__title">Мост Дьявола</p>
+            <p class="media__author">Автор фото: Антон</p>
+            <p class="media__liked">
+              <svg class="login-icon" width="23" height="21">
+                <use xlink:href="img/like-icon.svg"></use>
+              </svg>
+              254
+            </p>
+          </div>
+        </li>
+      </list>
+    </section>
+    <section class="video-presentation">
+      <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
+      <div class="video-presentation__text-wrapper">
+        <p class="video-presentation__header">Все еще сомневаетесь?</p>
+        <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </div>
+      <img src="img/video-mobile.jpg">
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag">
+        <p class="hashtag">#visitsedona</p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/sedonaaz">
+              <span class="visually-hidden">Аккаунт города Седона в Твиттере</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/watch?v=_qHjLngt7OI">
+              <span class="visually-hidden">Видеоролик о Седоне</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/VisitSedona/">
+              <span class="visually-hidden">Аккаунт города Седона в Фейсбуке</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <p class="copyright__text">Разработано <span class="visually-hidden">в HTML Academy</span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

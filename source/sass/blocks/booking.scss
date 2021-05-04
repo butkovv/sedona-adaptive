@@ -1,0 +1,24 @@
+.booking {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 33px;
+  padding-bottom: 49px;
+  text-align: center;
+}
+
+.booking__button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 280px;
+  height: 58px;
+  background-color: $basic-blue;
+  color: $basic-white;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 18px;
+  cursor: pointer;
+  &:visited {
+    color: $basic-white;
+  }
+}

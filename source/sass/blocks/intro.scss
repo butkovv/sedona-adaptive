@@ -1,0 +1,20 @@
+.intro {
+  background-image: url('../../img/back-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 158px;
+  display: flex;
+  align-items: center;
+}
+
+.intro--index {
+  background-image: url('../../img/back-mobile.jpg');
+  height: 390px;
+  background-position: center;
+}
+
+.intro--index__text {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

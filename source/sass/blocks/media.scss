@@ -1,0 +1,46 @@
+.media__text-wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.media__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.media__description-text {
+  line-height: 24px;
+  text-align: center;
+}
+
+.media__list {
+  list-style: none;
+}
+
+.media__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.media__title {
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+
+.media__author {
+  text-transform: none;
+  line-height: 24px;
+  margin: 0;
+}
+
+.media__liked {
+  font-weight: 700;
+  margin-top: 8px;
+  line-height: 24px;
+}

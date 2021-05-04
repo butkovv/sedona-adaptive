@@ -1,0 +1,120 @@
+.advantages {
+  text-align: center;
+  padding-top: 32px;
+  counter-reset: css-counter 0;
+}
+
+.advantages__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-height: 256px;
+    align-items: center;
+  }
+}
+
+.advantages__item img {
+  object-fit: cover;
+}
+
+.advantages__subtitle {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item--city {
+  background-color: $basic-blue;
+  color: $basic-white;
+  line-height: 0;
+}
+
+.advantages__item--bridge {
+  line-height: 0;
+  flex-direction: row-reverse;
+  background-color: $basic-blue;
+  color: $basic-white;
+}
+
+.advantages__item-info {
+  padding-top: 36px;
+  padding-bottom: 40px;
+  line-height: 21px;
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+    padding: 44px;
+  }
+}
+
+.recommendations__list {
+  list-style: none;
+  padding: 0;
+  padding-left: 69px;
+  padding-right: 30px;
+  text-align: left;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.recommendations__item--housing {
+  &::before {
+    content: "";
+    width: 39px;
+    height: 37px;
+    background-image: url("../../img/icon-house.svg");
+    background-repeat: no-repeat;
+  }
+  order: 0;
+}
+
+.recommendations__item--food {
+  order: 1;
+}
+
+.recommendations__item--souvenirs {
+  order: 2;
+}
+
+.advantages__item--feature {
+  background-color: $basic-grey;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: calc(100% / 3);
+    margin-right: -2px;
+    margin-left: -2px;
+  }
+}
+
+.advantages__item--feature .advantages__item-info {
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.advantages__item-header {
+  margin: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__item-description {
+  margin: 0;
+  counter-increment: css-counter 1;
+  &::before {
+    content: "— №" counter(css-counter) " —";
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
