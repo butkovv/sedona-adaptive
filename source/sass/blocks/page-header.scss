@@ -3,6 +3,11 @@
 }
 
 .page-header__logo {
+  display: block;
+  min-height: 56px;
   position: absolute;
   left: calc(50% - 51px);
+  @media (max-width: $mobile-width-only) {
+    top: 228px;
+  }
 }

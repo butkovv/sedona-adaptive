@@ -13,11 +13,10 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img clas="logo-image" src="img/logotype-mobile.svg" alt="Sedona" height="84" width="102">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav main-nav--closed">
+      <a class="page-header__logo">
+        <img clas="logo-image" src="img/logotype-mobile.svg" alt="Sedona" height="84" width="102">
+      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -42,6 +41,7 @@
           </li>
         </ul>
       </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
     <section class="intro intro--index">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -153,6 +153,19 @@
       </div>
     </div>
   </footer>
+  <script>
+    const mainNav = document.querySelector('.main-nav');
+    const toggleButton = mainNav.querySelector('.main-nav__toggle');
+    toggleButton.addEventListener('click', () => {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.remove('main-nav--closed');
+        mainNav.classList.add('main-nav--opened');
+      } else {
+        mainNav.classList.remove('main-nav--opened');
+        mainNav.classList.add('main-nav--closed');
+      }
+    });
+  </script>
 </body>
 
 </html>
