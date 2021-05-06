@@ -11,10 +11,20 @@
   background-image: url('../../img/back-mobile.jpg');
   height: 390px;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    background-image: url('../../img/back-desktop.jpg');
+  }
 }
 
 .intro__text {
   margin-left: auto;
   margin-right: auto;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 350px;
+    width: 461px;
+  }
 }

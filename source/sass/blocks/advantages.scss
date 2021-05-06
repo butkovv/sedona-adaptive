@@ -4,10 +4,20 @@
   counter-reset: css-counter 0;
 }
 
+.advantages__text-wrapper {
+  @media (min-width: $tablet-width) {
+    min-height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
 .advantages__item {
   @media (min-width: $tablet-width) {
     display: flex;
-    max-height: 256px;
+    min-height: 256px;
     align-items: center;
   }
 }
@@ -19,6 +29,10 @@
 .advantages__subtitle {
   font-size: 18px;
   line-height: 26px;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
@@ -45,7 +59,6 @@
   padding-bottom: 40px;
   line-height: 21px;
   @media (min-width: $tablet-width) {
-    min-width: 256px;
     padding: 44px;
   }
 }
@@ -60,6 +73,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    min-height: 330px;
+    padding: 0;
+  }
+}
+
+.recommendations__item {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 60px;
   }
 }
 
@@ -73,6 +98,7 @@
 
   &::before {
     content: "";
+    display: block;
     width: 39px;
     height: 37px;
     position: absolute;
@@ -82,8 +108,10 @@
     background-position: 0 0;
 
     @media (min-width: $tablet-width) {
-      left: 100px;
-      top: -50px;
+      left: 50px;
+      top: -90px;
+      width: 75px;
+      height: 75px;
     }
   }
 }
@@ -107,12 +135,23 @@
 .recommendations__item--food .recommendations__subtitle {
   &::before {
     background-image: url("../../img/icon-burger.svg");
+
+    @media (min-width: $tablet-width) {
+      background-size: 76px 68px;
+      top: -85px;
+      left: 60px;
+    }
   }
 }
 
 .recommendations__item--housing .recommendations__subtitle {
   &::before {
     background-image: url("../../img/icon-house.svg");
+
+    @media (min-width: $tablet-width) {
+      background-size: 75px 72px;
+      left: 55px;
+    }
   }
 }
 
@@ -120,6 +159,11 @@
   &::before {
     background-image: url("../../img/icon-gift.svg");
     height: 39px;
+
+    @media (min-width: $tablet-width) {
+      height: 75px;
+      background-size: 64px 75px;
+    }
   }
 }
 
@@ -129,8 +173,9 @@
   padding-top: 28px;
   padding-bottom: 28px;
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: inline-flex;
     width: calc(100% / 3);
+    padding: 0;
     margin-right: -2px;
     margin-left: -2px;
   }
@@ -139,7 +184,8 @@
 .advantages__item--feature .advantages__item-info {
   padding: 0;
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
 
