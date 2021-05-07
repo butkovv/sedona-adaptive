@@ -5,6 +5,9 @@
   height: 158px;
   display: flex;
   align-items: center;
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
 }
 
 .intro--index {
