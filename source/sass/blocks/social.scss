@@ -12,6 +12,14 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 5px;
+
+  &:hover {
+    background-color: $hover-blue;
+  }
+
+  &:active {
+    background-color: $active-blue;
+  }
 }
 
 .social__link--twitter {

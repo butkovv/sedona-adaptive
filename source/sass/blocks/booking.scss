@@ -4,6 +4,23 @@
   padding-top: 33px;
   padding-bottom: 49px;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    min-height: 318px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+}
+
+.booking__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.booking__description {
+  max-width: 458px;
+  margin: 14px auto;
 }
 
 .booking__button {
@@ -20,5 +37,22 @@
   cursor: pointer;
   &:visited {
     color: $basic-white;
+  }
+
+  &:hover {
+    background-color: $hover-blue;
+  }
+
+  &:active {
+    background-color: $active-blue;
+    color: rgba($basic-white, 0.3);
+  }
+
+  &:disabled {
+    background-color: #E5E5E5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
   }
 }

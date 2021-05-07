@@ -230,17 +230,23 @@ a {
   list-style: none;
   padding: 0;
   margin: 0; }
+  @media (min-width: 768px) {
+    .advantages__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; } }
 
 .advantages__item--city {
   background-color: #81B3D2;
   color: #ffffff;
-  line-height: 0; }
+  line-height: 0;
+  grid-column: span 3; }
 
 .advantages__item--bridge {
   line-height: 0;
   flex-direction: row-reverse;
   background-color: #81B3D2;
-  color: #ffffff; }
+  color: #ffffff;
+  grid-column: span 3; }
 
 .advantages__item-info {
   padding-top: 36px;
@@ -249,6 +255,9 @@ a {
   @media (min-width: 768px) {
     .advantages__item-info {
       padding: 44px; } }
+
+.advantages__item--recommendations {
+  grid-column: span 3; }
 
 .recommendations__list {
   list-style: none;
@@ -291,7 +300,6 @@ a {
     background-position: 0 0; }
     @media (min-width: 768px) {
       .recommendations__subtitle::before {
-        left: 50px;
         top: -90px;
         width: 75px;
         height: 75px; } }
@@ -314,14 +322,14 @@ a {
     .recommendations__item--food .recommendations__subtitle::before {
       background-size: 76px 68px;
       top: -85px;
-      left: 60px; } }
+      left: calc(50% - 34px); } }
 
 .recommendations__item--housing .recommendations__subtitle::before {
   background-image: url("../../img/icon-house.svg"); }
   @media (min-width: 768px) {
     .recommendations__item--housing .recommendations__subtitle::before {
       background-size: 75px 72px;
-      left: 55px; } }
+      left: calc(50% - 36px); } }
 
 .recommendations__item--souvenirs .recommendations__subtitle::before {
   background-image: url("../../img/icon-gift.svg");
@@ -329,6 +337,7 @@ a {
   @media (min-width: 768px) {
     .recommendations__item--souvenirs .recommendations__subtitle::before {
       height: 75px;
+      left: calc(50% - 37px);
       background-size: 64px 75px; } }
 
 .advantages__item--feature {
@@ -338,11 +347,7 @@ a {
   padding-bottom: 28px; }
   @media (min-width: 768px) {
     .advantages__item--feature {
-      display: inline-flex;
-      width: calc(100% / 3);
-      padding: 0;
-      margin-right: -2px;
-      margin-left: -2px; } }
+      padding: 0; } }
 
 .advantages__item--feature .advantages__item-info {
   padding: 0; }
@@ -372,6 +377,20 @@ a {
   padding-top: 33px;
   padding-bottom: 49px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .booking {
+      box-sizing: border-box;
+      min-height: 318px;
+      padding-top: 58px;
+      padding-bottom: 58px; } }
+
+@media (min-width: 768px) {
+  .booking__title {
+    font-size: 30px; } }
+
+.booking__description {
+  max-width: 458px;
+  margin: 14px auto; }
 
 .booking__button {
   box-sizing: border-box;
@@ -387,6 +406,16 @@ a {
   cursor: pointer; }
   .booking__button:visited {
     color: #ffffff; }
+  .booking__button:hover {
+    background-color: #669EC0; }
+  .booking__button:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3); }
+  .booking__button:disabled {
+    background-color: #E5E5E5; }
+  @media (min-width: 768px) {
+    .booking__button {
+      width: 458px; } }
 
 .social__list {
   display: flex;
@@ -401,6 +430,10 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 5px; }
+  .social__link:hover {
+    background-color: #669EC0; }
+  .social__link:active {
+    background-color: #5496BD; }
 
 .social__link--twitter {
   background-image: url("../../img/icon-twitter.svg"); }
