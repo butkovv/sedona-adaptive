@@ -168,6 +168,9 @@ a {
   @media (max-width: 767px) {
     .page-header__logo {
       top: 228px; } }
+  @media (min-width: 1200px) {
+    .page-header__logo {
+      left: calc(50% - 93px); } }
 
 .intro {
   background-image: url("../../img/back-desktop.jpg");
@@ -179,15 +182,31 @@ a {
   @media (min-width: 768px) {
     .intro {
       min-height: 290px; } }
+  .intro::after {
+    content: "";
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0px;
+    background-image: url("../../img/intro-triangle.png");
+    background-repeat: no-repeat;
+    background-position: center; }
 
 .intro--index {
   background-image: url("../../img/back-mobile.jpg");
   height: 390px;
   background-position: center; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .intro--index {
+      background-image: url("../../img/back-mobile@2x.jpg");
+      background-size: cover; } }
   @media (min-width: 768px) {
     .intro--index {
       height: 518px;
       background-image: url("../../img/back-desktop.jpg"); } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .intro--index {
+      background-image: url("../../img/back-desktop@2x.webp"); } }
 
 .intro__text {
   margin-left: auto;
@@ -202,6 +221,18 @@ a {
   text-align: center;
   padding-top: 32px;
   counter-reset: css-counter 0; }
+
+@media (min-width: 768px) {
+  .advantages__picture {
+    width: calc(100% / 3 * 2); } }
+
+.advantages__picture img {
+  height: 256px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 80% top;
+     object-position: 80% top; }
 
 .advantages__text-wrapper {
   padding-left: 20px;
@@ -219,10 +250,6 @@ a {
     display: flex;
     min-height: 256px;
     align-items: center; } }
-
-.advantages__item img {
-  -o-object-fit: cover;
-     object-fit: cover; }
 
 .advantages__subtitle {
   font-size: 18px;
@@ -262,6 +289,8 @@ a {
   line-height: 21px; }
   @media (min-width: 768px) {
     .advantages__item-info {
+      box-sizing: border-box;
+      width: calc(100% / 3);
       padding: 44px; } }
 
 .advantages__item--recommendations {
@@ -363,6 +392,7 @@ a {
   padding-bottom: 25px; }
   @media (min-width: 768px) {
     .advantages__item--feature .advantages__item-info {
+      width: auto;
       padding-left: 48px;
       padding-right: 48px; } }
 
@@ -436,6 +466,10 @@ a {
     .page-footer {
       padding-left: 60px;
       padding-right: 60px; } }
+  @media (min-width: 1200px) {
+    .page-footer {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .page-footer__wrapper {
   display: grid;
@@ -513,6 +547,11 @@ a {
     padding-left: 60px;
     padding-right: 60px; } }
 
+@media (min-width: 1200px) {
+  .media {
+    padding-left: 0;
+    padding-right: 0; } }
+
 .media__text-wrapper {
   padding-left: 25px;
   padding-right: 25px;
@@ -547,12 +586,18 @@ a {
   padding-top: 11px; }
   @media (min-width: 768px) {
     .media__info {
+      min-height: 80px;
       display: flex;
       justify-content: space-between;
+      padding-top: 0;
       padding-left: 20px;
       padding-right: 20px;
       align-items: center;
       background-color: #F2F2F2; } }
+  @media (min-width: 1200px) {
+    .media__info {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #ffffff; } }
 
 .media__list {
   list-style: none;
@@ -569,7 +614,8 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #E5E5E5; }
+  border-bottom: 1px solid #E5E5E5;
+  line-height: 0; }
   @media (min-width: 768px) {
     .media__item {
       padding: 0;
@@ -602,7 +648,8 @@ a {
     .media__liked {
       padding-left: 0;
       min-width: 35px;
-      text-align: left; } }
+      text-align: left;
+      margin: 0; } }
   .media__liked::before {
     content: "";
     width: 39px;
@@ -618,6 +665,19 @@ a {
         left: auto;
         right: 50px;
         top: calc(50% - 12px); } }
+    @media (min-width: 1200px) {
+      .media__liked::before {
+        background-image: url(../../img/like-icon-white.svg); } }
+
+.media__photo {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media (min-width: 1200px) {
+    .media__photo {
+      margin-bottom: -81px; } }
 
 @media (min-width: 768px) {
   .video-presentation {

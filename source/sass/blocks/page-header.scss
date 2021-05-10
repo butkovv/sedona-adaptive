@@ -10,4 +10,7 @@
   @media (max-width: $mobile-width-only) {
     top: 228px;
   }
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 93px);
+  }
 }
