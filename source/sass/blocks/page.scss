@@ -5,6 +5,7 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  background-color: #F2F2F2;
 }
 
 .page__body {
@@ -14,4 +15,5 @@
   max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }

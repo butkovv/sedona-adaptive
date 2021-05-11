@@ -38,6 +38,10 @@
     text-align: left;
     line-height: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .page-footer__copyright {
@@ -47,9 +51,14 @@
     height: 41px;
     vertical-align: middle;
   }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
