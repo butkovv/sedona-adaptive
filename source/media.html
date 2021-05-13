@@ -136,7 +136,22 @@
         <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они <br>не подорожали в очередной
           раз!</p>
       </div>
-      <img src="img/video-mobile.jpg">
+      <div class="video-presentation__player player">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <img class="player-preview" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x">
+        </picture>
+        <div class="player-controls">
+          <input type="range" class="player-scale">
+          <button type="button" class="player-button player-button-replay"><span class="visually-hidden">Replay</span></button>
+          <button type="button" class="player-button player-button-captions"><span class="visually-hidden">CC</span></button>
+          <button type="button" class="player-button player-button-fullscreen"><span class="visually-hidden">Fullscreen</span></button>
+        </div>
+        <!--<div class="player-controls-top">-->
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
