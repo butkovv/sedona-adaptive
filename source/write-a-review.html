@@ -55,7 +55,7 @@
   <main class="page-main">
     <section class="review">
       <h2 class="review__header">Оставьте свой отзыв</h2>
-      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br>а также о посещенных вами достопримечательностях.</p>
       <form class="review-form">
         <fieldset class="form-section form-section--name">
           <legend class="fieldset-header">Представьтесь:</legend>
@@ -65,7 +65,7 @@
         </fieldset>
         <fieldset class="form-section form-section--contact-info">
           <legend class="fieldset-header">Контактная информация:</legend>
-          <p><label class="contact-info__phone"><span>Контактный телефон<sup>*</sup>: </span><input class="review-form__field" type="tel" name="phone" placeholder="Введите телефон"></label>
+          <p><label class="contact-info__phone"><span><span class="invisible-text-desktop">Контактный </span>телефон<sup>*</sup>: </span><input class="review-form__field" type="tel" name="phone" placeholder="Введите телефон"></label>
           </p>
           <p><label class="contact-info__email"><span>Электронная почта<sup>*</sup>: </span><input class="review-form__field" type="email" name="email" placeholder="Введите e-mail"></label>
           </p>
@@ -85,7 +85,7 @@
         </fieldset>
         <fieldset class="form-section form-section--review">
           <legend class="fieldset-header">Опишите свои эмоции:</legend>
-          <textarea class="input-review" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="review-form__field input-review" placeholder="Опишите подробно все свои восторги"></textarea>
           <button class="review-form__submit" type="submit">Отправить отзыв</button>
         </fieldset>
       </form>

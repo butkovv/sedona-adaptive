@@ -3,7 +3,13 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
+
 .review__header {
   line-height: 26px;
   font-size: 18px;
@@ -19,6 +25,10 @@
     font-size: 30px;
     line-height: 1.15;
     padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
   }
 }
 
@@ -41,6 +51,14 @@
 .review-form {
   display: grid;
   grid-template-columns: 1fr;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
   }
@@ -54,14 +72,14 @@
   border: none;
   border-bottom: 1px solid #e5e5e5;
 
+  label {
+    display: flex;
+    align-items: center;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-}
-
-.form-section label {
-  display: flex;
-  align-items: center;
 }
 
 .fieldset-header {
@@ -76,34 +94,51 @@
     font-size: 21px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .review-form__field {
   display: block;
-  height: 58px;
+  height: 50px;
   margin-left: 12px;
   margin-top: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  border: none;
+  border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
   padding: 0;
   padding-left: 22px;
   width: 100px;
   flex-grow: 2;
+  outline: none;
   &::placeholder {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     color: $basic-black;
   }
-}
 
-.review-form p {
-  margin-top: 0;
-  margin-bottom: 20px;
 
-  position: relative;
+  &::placeholder {
+    color: $basic-black;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: $basic-white;
+  }
+
+  &:focus {
+    background-color: $basic-white;
+    border: 4px solid #E5E5E5;
+  }
 }
 
 .form-section--name {
@@ -115,9 +150,17 @@
       text-align: left;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .form-section--contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0;
+
   label {
     flex-direction: column;
     align-items: flex-start;
@@ -138,8 +181,29 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 60px;
+    margin-top: 50px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+
+    .fieldset-header {
+      grid-column: span 2;
+    }
+
+    label {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    p {
+      margin-right: 80px;
+    }
+
+    p:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -148,6 +212,10 @@
   margin-top: 8px;
   margin-left: 0;
   align-self: stretch;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 18px;
+  }
 }
 
 .contact-info__phone::before {
@@ -159,10 +227,12 @@
 }
 
 .form-section--impression {
+
   label {
     line-height: 50px;
     position: relative;
   }
+
   span {
     margin-left: 58px;
     font-size: 18px;
@@ -179,6 +249,16 @@
 
     .fieldset-header {
       text-align: left;
+    }
+
+    label {
+      line-height: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .fieldset-header {
+      padding-left: 80px;
     }
   }
 }
@@ -246,12 +326,18 @@
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 30px;
+    border: none;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0;
 
     legend {
       grid-column: span 2;
+    }
+
+    p {
+      padding-left: 15%;
     }
   }
 }
@@ -311,6 +397,9 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+
+    margin-top: 60px;
+    text-align: left;
   }
 }
 
@@ -320,31 +409,15 @@
   box-sizing: border-box;
   height: 160px;
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid #f2f2f2;
   padding-top: 13px;
   padding-right: 22px;
-  padding-bottom: 29px;
+  padding-bottom: 13px;
   padding-left: 22px;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
-
-  &::placeholder {
-    color: $basic-black;
-  }
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: $basic-white;
-  }
-
-  &:focus {
-    background-color: green;
-  }
 }
 
 .review-form__submit {
@@ -384,5 +457,11 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+  }
+}
+
+.invisible-text-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
