@@ -114,6 +114,8 @@
   margin-top: 8px;
   line-height: 24px;
   padding-left: 37px;
+  cursor: pointer;
+  transition: all 0.4s;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -132,6 +134,7 @@
     background-image: url(../../img/like-icon.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+
     @media (min-width: $tablet-width) {
       left: auto;
       right: 50px;
@@ -140,6 +143,14 @@
     @media (min-width: $desktop-width) {
       background-image: url(../../img/like-icon-white.svg);
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

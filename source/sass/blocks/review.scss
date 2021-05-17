@@ -115,6 +115,8 @@
   width: 100px;
   flex-grow: 2;
   outline: none;
+  transition: all 0.5s;
+
   &::placeholder {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
@@ -183,6 +185,7 @@
     grid-column-end: 3;
     margin-top: 50px;
     border-bottom: none;
+    border-top: 3px solid red;
   }
 
   @media (min-width: $desktop-width) {
@@ -246,6 +249,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     border: none;
+    border-right: 1px solid #DBDBDB;
 
     .fieldset-header {
       text-align: left;
@@ -254,6 +258,7 @@
     label {
       line-height: 60px;
     }
+
   }
 
   @media (min-width: $desktop-width) {
@@ -276,6 +281,7 @@
     background-color: #f2f2f2;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.5s;
   }
 
   &:checked {
@@ -290,6 +296,7 @@
       background-color: $basic-black;
       border-radius: 50%;
       z-index: 2;
+      transition: all 0.5s;
     }
   }
 
@@ -355,6 +362,7 @@
     background-color: #f2f2f2;
     border-radius: 4px;
     cursor: pointer;
+    transition: .3s ease-in-out;
   }
 
   &:checked {
@@ -370,6 +378,7 @@
       background-position: center;
       border-radius: 4px;
       cursor: pointer;
+      transition: all 0.5s;
     }
   }
 
@@ -438,6 +447,8 @@
   margin-bottom: 48px;
   cursor: pointer;
   border: none;
+  transition: .3s ease-in-out;
+
   &:visited {
     color: $basic-white;
   }

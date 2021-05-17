@@ -16,9 +16,19 @@
     border-bottom: 1px solid rgba(#010101, 0.2);
     color: $basic-white;
     font-size: 18px;
+
+    &:hover {
+      background-color: #669EC0;
+    }
+
+    &:active {
+      background-color: #5496BD;
+      color: rgba(#FFFFFF, 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {
+    transition: all 0.4s;
     &:hover {
       color: $basic-blue;
     }

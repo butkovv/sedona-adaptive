@@ -126,13 +126,20 @@ a {
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       border-bottom: 1px solid rgba(1, 1, 1, 0.2);
       color: #ffffff;
-      font-size: 18px; } }
+      font-size: 18px; }
+      .site-list__item a:hover {
+        background-color: #669EC0; }
+      .site-list__item a:active {
+        background-color: #5496BD;
+        color: rgba(255, 255, 255, 0.3); } }
   @media (min-width: 768px) {
-    .site-list__item a:hover {
-      color: #81B3D2; }
-    .site-list__item a:active {
-      color: #000000;
-      opacity: 0.3; } }
+    .site-list__item a {
+      transition: all 0.4s; }
+      .site-list__item a:hover {
+        color: #81B3D2; }
+      .site-list__item a:active {
+        color: #000000;
+        opacity: 0.3; } }
 
 @media (min-width: 768px) {
   .site-list__item--active a {
@@ -445,7 +452,8 @@ a {
   font-weight: 700;
   text-align: center;
   padding-top: 18px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.6s; }
   .booking__button:visited {
     color: #ffffff; }
   .booking__button:hover {
@@ -535,7 +543,8 @@ a {
   background-color: #81B3D2;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 5px; }
+  margin-right: 5px;
+  transition: all 0.4s; }
   .social__link:hover {
     background-color: #669EC0; }
   .social__link:active {
@@ -590,7 +599,8 @@ a {
   background-position: center;
   border: none;
   cursor: pointer;
-  opacity: 1; }
+  opacity: 1;
+  transition: all 0.4s; }
   .player-button:hover {
     opacity: 0.6; }
   .player-button:active {
@@ -824,7 +834,8 @@ how to remove the virtical space around the range input in IE*/
   padding-left: 22px;
   width: 100px;
   flex-grow: 2;
-  outline: none; }
+  outline: none;
+  transition: all 0.5s; }
   .review-form__field::-moz-placeholder {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
@@ -879,7 +890,8 @@ how to remove the virtical space around the range input in IE*/
       grid-column-start: 1;
       grid-column-end: 3;
       margin-top: 50px;
-      border-bottom: none; } }
+      border-bottom: none;
+      border-top: 3px solid red; } }
   @media (min-width: 1200px) {
     .form-section--contact-info {
       grid-template-columns: 1fr 1fr; }
@@ -924,7 +936,8 @@ how to remove the virtical space around the range input in IE*/
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    border: none; }
+    border: none;
+    border-right: 1px solid #DBDBDB; }
     .form-section--impression .fieldset-header {
       text-align: left; }
     .form-section--impression label {
@@ -945,7 +958,8 @@ how to remove the virtical space around the range input in IE*/
     top: calc(50% - 24px);
     background-color: #f2f2f2;
     border-radius: 50%;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.5s; }
   .input-impression:checked::after {
     visibility: visible;
     content: "";
@@ -956,7 +970,8 @@ how to remove the virtical space around the range input in IE*/
     left: 15px;
     background-color: #000000;
     border-radius: 50%;
-    z-index: 2; }
+    z-index: 2;
+    transition: all 0.5s; }
   .input-impression:hover:before {
     background-color: #e5e5e5; }
   .input-impression:active:before {
@@ -999,7 +1014,8 @@ how to remove the virtical space around the range input in IE*/
     top: calc(50% - 29px);
     background-color: #f2f2f2;
     border-radius: 4px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: .3s ease-in-out; }
   .input-place:checked::after {
     visibility: visible;
     content: "";
@@ -1011,7 +1027,8 @@ how to remove the virtical space around the range input in IE*/
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.5s; }
   .input-place:hover::before {
     background-color: #e5e5e5; }
   .input-place:active::before {
@@ -1062,7 +1079,8 @@ how to remove the virtical space around the range input in IE*/
   margin-top: 51px;
   margin-bottom: 48px;
   cursor: pointer;
-  border: none; }
+  border: none;
+  transition: .3s ease-in-out; }
   .review-form__submit:visited {
     color: #ffffff; }
   .review-form__submit:hover {
@@ -1181,7 +1199,9 @@ how to remove the virtical space around the range input in IE*/
   font-weight: 700;
   margin-top: 8px;
   line-height: 24px;
-  padding-left: 37px; }
+  padding-left: 37px;
+  cursor: pointer;
+  transition: all 0.4s; }
   @media (min-width: 768px) {
     .media__liked {
       padding-left: 0;
@@ -1206,6 +1226,10 @@ how to remove the virtical space around the range input in IE*/
     @media (min-width: 1200px) {
       .media__liked::before {
         background-image: url(../../img/like-icon-white.svg); } }
+  .media__liked:hover {
+    opacity: 0.6; }
+  .media__liked:active {
+    opacity: 0.3; }
 
 .media__photo {
   width: 100%;
