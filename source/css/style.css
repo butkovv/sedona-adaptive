@@ -728,6 +728,309 @@ how to remove the virtical space around the range input in IE*/
       padding: 0; } }
 
 @media (min-width: 768px) {
+  .review {
+    padding-left: 60px;
+    padding-right: 60px; } }
+
+.review__header {
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 768px) {
+    .review__header {
+      font-size: 30px;
+      line-height: 1.15;
+      padding-top: 64px; } }
+
+.review__description {
+  line-height: 24px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 0;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .review__description {
+      padding-bottom: 70px;
+      border: none; } }
+
+.review-form {
+  display: grid;
+  grid-template-columns: 1fr; }
+  @media (min-width: 768px) {
+    .review-form {
+      grid-template-columns: 1fr 1fr; } }
+
+.form-section {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5; }
+  @media (min-width: 768px) {
+    .form-section {
+      padding: 0; } }
+
+.form-section label {
+  display: flex;
+  align-items: center; }
+
+.fieldset-header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .fieldset-header {
+      font-size: 21px;
+      padding-bottom: 55px; } }
+
+.review-form__field {
+  display: block;
+  height: 58px;
+  margin-left: 12px;
+  margin-top: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 0;
+  padding-left: 22px;
+  width: 100px;
+  flex-grow: 2; }
+  .review-form__field::-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    color: #000000; }
+  .review-form__field::placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    color: #000000; }
+
+.review-form p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: relative; }
+
+@media (min-width: 768px) {
+  .form-section--name {
+    padding-left: 58px;
+    border: none; }
+    .form-section--name .fieldset-header {
+      text-align: left; } }
+
+.form-section--contact-info label {
+  flex-direction: column;
+  align-items: flex-start; }
+  .form-section--contact-info label::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+@media (min-width: 768px) {
+  .form-section--contact-info {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 60px;
+    border-bottom: none; } }
+
+.form-section--contact-info .review-form__field {
+  width: auto;
+  margin-top: 8px;
+  margin-left: 0;
+  align-self: stretch; }
+
+.contact-info__phone::before {
+  background-image: url(../../img/phone.svg); }
+
+.contact-info__email::before {
+  background-image: url(../../img/mail.svg); }
+
+.form-section--impression label {
+  line-height: 50px;
+  position: relative; }
+
+.form-section--impression span {
+  margin-left: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none; }
+
+@media (min-width: 768px) {
+  .form-section--impression {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: none; }
+    .form-section--impression .fieldset-header {
+      text-align: left; } }
+
+.input-impression {
+  visibility: hidden; }
+  .input-impression::before {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: calc(50% - 24px);
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    cursor: pointer; }
+  .input-impression:checked::after {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: calc(50% - 9px);
+    left: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    z-index: 2; }
+  .input-impression:hover:before {
+    background-color: #e5e5e5; }
+  .input-impression:active:before {
+    background-color: #d5d5d5; }
+  .input-impression:active:after {
+    opacity: 0.3; }
+
+.form-section--visited-places label {
+  line-height: 60px;
+  position: relative; }
+
+.form-section--visited-places span {
+  margin-left: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none; }
+
+@media (min-width: 768px) {
+  .form-section--visited-places {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .form-section--visited-places legend {
+      grid-column: span 2; } }
+
+.input-place {
+  visibility: hidden; }
+  .input-place::before {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: calc(50% - 29px);
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    cursor: pointer; }
+  .input-place:checked::after {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: calc(50% - 29px);
+    background-image: url(../../img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    cursor: pointer; }
+  .input-place:hover::before {
+    background-color: #e5e5e5; }
+  .input-place:active::before {
+    background-color: #d5d5d5; }
+  .input-place:active::after {
+    opacity: 0.3; }
+
+.form-section--review {
+  text-align: center;
+  border: none; }
+  @media (min-width: 768px) {
+    .form-section--review {
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+
+.input-review {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 160px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-top: 13px;
+  padding-right: 22px;
+  padding-bottom: 29px;
+  padding-left: 22px;
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px; }
+  .input-review::-moz-placeholder {
+    color: #000000; }
+  .input-review::placeholder {
+    color: #000000; }
+  .input-review:hover {
+    background-color: #e5e5e5; }
+  .input-review:active {
+    background-color: #ffffff; }
+  .input-review:focus {
+    background-color: green; }
+
+.review-form__submit {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 280px;
+  height: 58px;
+  background-color: #81B3D2;
+  color: #ffffff;
+  line-height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 51px;
+  margin-bottom: 48px;
+  cursor: pointer;
+  border: none; }
+  .review-form__submit:visited {
+    color: #ffffff; }
+  .review-form__submit:hover {
+    background-color: #669EC0; }
+  .review-form__submit:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3); }
+  .review-form__submit:disabled {
+    background-color: #e5e5e5; }
+  @media (min-width: 768px) {
+    .review-form__submit {
+      width: 324px; } }
+
+@media (min-width: 768px) {
   .media {
     padding-left: 60px;
     padding-right: 60px; } }

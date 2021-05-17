@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Sedona</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -12,18 +13,17 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-        <img clas="logo-image" src="img/logotype-mobile.svg" alt="Sedona">
-      </picture>
-    </a>
     <nav class="main-nav main-nav--closed">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img clas="logo-image" src="img/logotype-mobile.svg" alt="Sedona">
+        </picture>
+      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="index.html">
               Главная
             </a>
@@ -33,7 +33,7 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a>
               Форма отзыва
             </a>
@@ -45,6 +45,7 @@
           </li>
         </ul>
       </div>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
     <section class="intro">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -52,41 +53,43 @@
     </section>
   </header>
   <main class="page-main">
-    <h2 class="page-main__header">Оставьте свой отзыв</h2>
-    <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
-    <form class="review-form">
-      <fieldset class="form-section form-section--name">
-        <legend class="fieldset-header">Представьтесь:</legend>
-        <p><label>Имя<sup>*</sup>: <input type="text" name="name" placeholder="Петр"></label></p>
-        <p><label>Фамилия<sup>*</sup>: <input type="text" name="last-name" placeholder="Иванов"></label></p>
-        <p><label>Отчество: <input type="text" name="middle-name" placeholder="Александрович"></label></p>
-      </fieldset>
-      <fieldset class="form-section form-section--contact-info">
-        <legend class="fieldset-header">Контактная информация:</legend>
-        <p><label>Контактный телефон<sup>*</sup>: <input type="tel" name="phone" placeholder="Введите телефон"></label>
-        </p>
-        <p><label>Электронная почта<sup>*</sup>: <input type="email" name="email" placeholder="Введите e-mail"></label>
-        </p>
-      </fieldset>
-      <fieldset class="form-section form-section--impression">
-        <legend class="fieldset-header">Ваше общее впечатление:</legend>
-        <p><label><input type="radio" name="impression" value="positive">Скорее положительное</label></p>
-        <p><label><input type="radio" name="impression" value="negative">Скорее отрицательное</label></p>
-        <p><label><input type="radio" name="impression" value="undetermined">Затрудняюсь ответить</label></p>
-      </fieldset>
-      <fieldset class="form-section form-section--visited-places">
-        <legend class="fieldset-header">Посещенные достопримечательности:</legend>
-        <p><label><input type="checkbox" name="devils-bridge">Мост Дьявола</label></p>
-        <p><label><input type="checkbox" name="bell-mountain">Гора-Колокол</label></p>
-        <p><label><input type="checkbox" name="slide-park">Слайд-парк</label></p>
-        <p><label><input type="checkbox" name="red-rocks">Красные скалы</label></p>
-      </fieldset>
-      <fieldset class="form-section form-section--review">
-        <legend class="fieldset-header">Опишите свои эмоции:</legend>
-        <p><textarea placeholder="Опишите подробно все свои восторги"></textarea></p>
-      </fieldset>
-      <button type="submit">Отправить отзыв</button>
-    </form>
+    <section class="review">
+      <h2 class="review__header">Оставьте свой отзыв</h2>
+      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+      <form class="review-form">
+        <fieldset class="form-section form-section--name">
+          <legend class="fieldset-header">Представьтесь:</legend>
+          <p><label><span>Имя<sup>*</sup>: </span><input class="review-form__field" type="text" name="name" placeholder="Петр"></label></p>
+          <p><label><span>Фамилия<sup>*</sup>: </span><input class="review-form__field" type="text" name="last-name" placeholder="Иванов"></label></p>
+          <p><label><span>Отчество: </span><input class="review-form__field" type="text" name="middle-name" placeholder="Александрович"></label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--contact-info">
+          <legend class="fieldset-header">Контактная информация:</legend>
+          <p><label class="contact-info__phone"><span>Контактный телефон<sup>*</sup>: </span><input class="review-form__field" type="tel" name="phone" placeholder="Введите телефон"></label>
+          </p>
+          <p><label class="contact-info__email"><span>Электронная почта<sup>*</sup>: </span><input class="review-form__field" type="email" name="email" placeholder="Введите e-mail"></label>
+          </p>
+        </fieldset>
+        <fieldset class="form-section form-section--impression">
+          <legend class="fieldset-header">Ваше общее впечатление:</legend>
+          <p><label><input class="input-impression" type="radio" name="impression" value="positive"><span>Скорее положительное</span></label></p>
+          <p><label><input class="input-impression" type="radio" name="impression" value="negative"><span>Скорее отрицательное</span></label></p>
+          <p><label><input class="input-impression" type="radio" name="impression" value="undetermined"><span>Затрудняюсь ответить</span></label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--visited-places">
+          <legend class="fieldset-header">Посещенные достопримечательности:</legend>
+          <p><label><input class="input-place" type="checkbox" name="devils-bridge"><span>Мост Дьявола</span></label></p>
+          <p><label><input class="input-place" type="checkbox" name="bell-mountain"><span>Гора-Колокол</span></label></p>
+          <p><label><input class="input-place" type="checkbox" name="slide-park"><span>Слайд-парк</span></label></p>
+          <p><label><input class="input-place" type="checkbox" name="red-rocks"><span>Красные скалы</span></label></p>
+        </fieldset>
+        <fieldset class="form-section form-section--review">
+          <legend class="fieldset-header">Опишите свои эмоции:</legend>
+          <textarea class="input-review" placeholder="Опишите подробно все свои восторги"></textarea>
+          <button class="review-form__submit" type="submit">Отправить отзыв</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -119,6 +122,19 @@
       </div>
     </div>
   </footer>
+  <script>
+    const mainNav = document.querySelector('.main-nav');
+    const toggleButton = mainNav.querySelector('.main-nav__toggle');
+    toggleButton.addEventListener('click', () => {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.remove('main-nav--closed');
+        mainNav.classList.add('main-nav--opened');
+      } else {
+        mainNav.classList.remove('main-nav--opened');
+        mainNav.classList.add('main-nav--closed');
+      }
+    });
+  </script>
 </body>
 
 </html>
