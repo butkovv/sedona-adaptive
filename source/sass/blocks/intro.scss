@@ -44,6 +44,13 @@
   display: block;
 
   @media (min-width: $tablet-width) {
+    height: 77px;
+    width: 457px;
+  }
+}
+
+.intro__text--main {
+  @media (min-width: $tablet-width) {
     height: 350px;
     width: 461px;
   }
