@@ -19,7 +19,7 @@
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  background-image: url(../../img/controls-bg.svg);
+  background-image: url("../img/controls-bg.svg");
   @media (min-width: $tablet-width) {
     height: 93px;
     grid-template-columns: 93px 1fr 75px 93px;
@@ -54,9 +54,9 @@
 
 .player-button-replay {
   grid-column: 1/2;
-  background-image: url(../../img/replay.svg);
+  background-image: url("../img/replay.svg");
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/replay-white.svg);
+    background-image: url("../img/replay-white.svg");
     grid-row: 1;
   }
 }
@@ -64,9 +64,9 @@
 
 .player-button-captions {
   grid-column: 3/4;
-  background-image: url(../../img/subtitles.svg);
+  background-image: url("../img/subtitles.svg");
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/subtitles-white.svg);
+    background-image: url("../img/subtitles-white.svg");
     grid-row: 1;
     justify-self: right;
   }
@@ -75,9 +75,9 @@
 
 .player-button-fullscreen {
   grid-column: 4/5;
-  background-image: url(../../img/fullscreen.svg);
+  background-image: url("../img/fullscreen.svg");
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/fullscreen-white.svg);
+    background-image: url("../img/fullscreen-white.svg");
     grid-row: 1;
   }
 }

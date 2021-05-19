@@ -2,11 +2,13 @@
   "name": "sedona-22",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
+  "homepage": "https://butkovv.github.io/sedona-adaptive/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "del": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -27,7 +29,9 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",

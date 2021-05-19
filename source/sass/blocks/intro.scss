@@ -1,5 +1,5 @@
 .intro {
-  background-image: url('../../img/back-desktop.jpg');
+  background-image: url('../img/back-desktop.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   height: 158px;
@@ -14,26 +14,26 @@
     height: 57px;
     position: absolute;
     bottom: 0px;
-    background-image: url('../../img/intro-triangle.png');
+    background-image: url('../img/intro-triangle.png');
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
 .intro--index {
-  background-image: url('../../img/back-mobile.jpg');
+  background-image: url('../img/back-mobile.jpg');
   height: 390px;
   background-position: center;
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile@2x.jpg");
     background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
     height: 518px;
-    background-image: url('../../img/back-desktop.jpg');
+    background-image: url('../img/back-desktop.jpg');
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/back-desktop@2x.webp");
+      background-image: url("../img/back-desktop@2x.webp");
     }
   }
 }

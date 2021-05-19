@@ -157,7 +157,7 @@
 
 .recommendations__item--food .recommendations__subtitle {
   &::before {
-    background-image: url("../../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
 
     @media (min-width: $tablet-width) {
       background-size: 76px 68px;
@@ -169,7 +169,7 @@
 
 .recommendations__item--housing .recommendations__subtitle {
   &::before {
-    background-image: url("../../img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
 
     @media (min-width: $tablet-width) {
       background-size: 75px 72px;
@@ -180,7 +180,7 @@
 
 .recommendations__item--souvenirs .recommendations__subtitle {
   &::before {
-    background-image: url("../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     height: 39px;
 
     @media (min-width: $tablet-width) {

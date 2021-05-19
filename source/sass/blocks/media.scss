@@ -131,7 +131,7 @@
     position: absolute;
     left: 0px;
     top: 65px;
-    background-image: url(../../img/like-icon.svg);
+    background-image: url("../img/like-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -141,7 +141,7 @@
       top: calc(50% - 12px);
     }
     @media (min-width: $desktop-width) {
-      background-image: url(../../img/like-icon-white.svg);
+      background-image: url("../img/like-icon-white.svg");
     }
   }
 

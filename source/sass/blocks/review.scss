@@ -221,11 +221,11 @@
 }
 
 .contact-info__phone::before {
-  background-image: url(../../img/phone.svg);
+  background-image: url("../img/phone.svg");
 }
 
 .contact-info__email::before {
-  background-image: url(../../img/mail.svg);
+  background-image: url("../img/mail.svg");
 }
 
 .form-section--impression {
@@ -372,7 +372,7 @@
       width: 58px;
       height: 58px;
       top: calc(50% - 29px);
-      background-image: url(../../img/tick.svg);
+      background-image: url("../img/tick.svg");
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 4px;
