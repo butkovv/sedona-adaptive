@@ -133,8 +133,10 @@
 
     @media (min-width: $tablet-width) {
       top: -90px;
-      width: 75px;
-      height: 75px;
+      width: 76px;
+      height: 76px;
+      left: calc(50% - 38px);
+      background-position: center;
     }
   }
 }
@@ -162,7 +164,6 @@
     @media (min-width: $tablet-width) {
       background-size: 76px 68px;
       top: -85px;
-      left: calc(50% - 34px);
     }
   }
 }
@@ -173,7 +174,6 @@
 
     @media (min-width: $tablet-width) {
       background-size: 75px 72px;
-      left: calc(50% - 36px);
     }
   }
 }
@@ -185,7 +185,6 @@
 
     @media (min-width: $tablet-width) {
       height: 75px;
-      left: calc(50% - 37px);
       background-size: 64px 75px;
     }
   }
